@@ -876,6 +876,22 @@ sans-serif,
     position: relative;
     z-index: 2;
     padding: 20px;
+    align-items: center;
+}
+.behicel-perent{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.get-text{
+    display: flex;
+    align-items: center;
+    
+}
+.get-head{
+    display: flex;
+    align-items: center;
+    
 }
 .get-behicel span {
     color: #fff;
@@ -935,6 +951,9 @@ sans-serif,
 .competent .get-behicel .image-log{
     /* position: absolute; */
     right: 0;
+}
+.get-behicel{
+
 }
 #team .owl-nav{
     display: flex;
@@ -1963,5 +1982,26 @@ sans-serif;
     #newsay .team-text {
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .get-behicel{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .behicel-perent {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   }
+   @media (max-width: 768px) {
+    .get-behicel{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .pt-box-layer-content {
+        display: none !important;
+    }
+    .btn-nav{
+        width: ;
     }
    }
