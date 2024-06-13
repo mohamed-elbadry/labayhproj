@@ -147,6 +147,10 @@ svg:hover {
 
 
 .nav-item a.nav-link {
+    font-family:
+    "IBM Plex Arabic"
+     "Open Sans"
+      sans-serif;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 30px;
@@ -164,8 +168,9 @@ svg:hover {
 .show-drop .drop{
     background-color: #fff;
     padding: 10px 5px;
-    width: 150px;
-    border-radius: 5px;
+    width: 200px;
+    border: 1px solid #d6e5f2;
+    border-radius: 10px;
     position: absolute;
     display: none;
 }
@@ -173,7 +178,14 @@ svg:hover {
   display: block;
 }
 .nav-item .drop a{
-    font-size: 16px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+.nav-item .drop a:hover{
+    font-size: 14px;
+    color: #486DF6;
+    font-weight: 400;
 }
 .nav-item a.nav-link:hover{
     color: #486DF6;
@@ -1962,10 +1974,171 @@ sans-serif;
    /* =============================
               footer
    ============================= */
+   /* =============================
+              start standard
+   ============================= */
+   .standard{
+    margin: 100px 0px;
+    text-align: center;
+    align-items: center;
+   }
+   .standard .standard-text{
+    text-align: center;
+    align-items: center;
+   }
+   .standard .standard-text h2{
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    font-family:
+    "IBM Plex Arabic"
+    "Open Sans"
+    sans-serif;
+   }
+   .standard .standard-head{
+    margin-top: 20px;
+    background-color: #EEF8FF;
+    padding: 30px 20px;
+    border-radius: 10px;
+    line-height: 2;
+   }
+   .standard .standard-head span{
+    color: #000000    ;
+    font-size: 18px;
+    font-weight: 500;
+    font-family:
+    "IBM Plex Arabic"
+    "Open Sans"
+    sans-serif;
+   }
+   .standard .standard-head p{
+    color: #7B8292;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:
+    "IBM Plex Arabic"
+    "Open Sans"
+    sans-serif;
+   }
+   .standard .standard-box{
+    background-color: #6349FA;
+    border-radius: 20px;
+    margin-top:30px;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   .standard .two{
+    background-color:#EA7B86;
+   }
+   .standard .three{
+    background-color: #FEB603;
+   }
+   .standard .for{
+    background-color: #13C16D;
+   }
+   .standard .Fifth{
+    background-color: #00B0C5;
+   }
+   .standard .six{
+    background-color: #FF7925;
+   }
+   .standard .Seventh{
+    background-color: #2970FF;
+   }
+   .standard .VIII{
+    background-color: #E53068;
+   }
+   .standard .standard-box:nth-child(2){
+    background-color: red;
+    border-radius: 20px;
+    margin-top:30px;
+   }
+   .standard .standard-box .image{
+        padding: 50px 0;
+   }
+   .standard .standard-box .image img{
+    
+   }
+   .standard .standard-box .box-text{
+    margin: 0px 15px;
+   }
+   .standard .standard-box .box-text h2{
+    color: #ffffff;
+    font-size: 1.6em;
+   }
+   .standard .standard-box .box-text p{
+    color: #ffffff;
+    font-weight: 300;
+    opacity: .8;
+    font-size: 1.1em;
+    line-height: 1.8;
+   }
+   .standard .standard-box button{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .35);
+    background-position: center center;
+    background-size: cover;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-top: 12px;
+    padding-left: 30px;
+    padding-bottom: 12px;
+    padding-right: 30px;
+    border: none;
+    margin-bottom: 50px;
+   }
+   .standard .standard-box button {
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        transition: all 0.3s linear;
+   }
+   .standard .standard-box button a {
+    color: #fff;
+   }
+   .standard .standard-box:hover button {
+    transform: scale(1.05);
+   }
+   .standard .Questions{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);;
+    padding: 30px 30px;
+   }
+   .standard .Questions .questions-first{
+    display: flex;
+    gap: 5px;
+   }
+   .standard .Questions .questions-first h2{
+    color: #ffffff;
+    font-size: 1.1em;
+   }
+   
+   /* =============================
+             end standard
+   ============================= */
+   /* =============================
+              media
+   ============================= */
    @media (max-width: 567px) {
     .app .row{
         display: flex;
         flex-direction: column;
+    }
+    #nav .navbar-brand img{
+        width: 100px;
+    }
+    .btn-nav{
+        display: none;
+    }
+    .btn-nav-text{
+        margin-left: 20px;
     }
     .footer-link-soc .log-button {
         justify-content: center;
@@ -2008,3 +2181,6 @@ sans-serif;
         display: none!important;
     }
    }
+   /* =============================
+              media
+   ============================= */
