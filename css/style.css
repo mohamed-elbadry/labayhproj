@@ -3,53 +3,39 @@
 ==================================*/
 @font-face {
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic Bold";
     src: url(../fonts/IBMPlexSansArabic-Bold.ttf),
 }
 
 @font-face {
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic Medium";
     src: url(../fonts/IBMPlexSansArabic-Medium.ttf),
 }
 
 @font-face {
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic ExtraLight";
     src: url(../fonts/IBMPlexSansArabic-ExtraLight.ttf),
 }
 @font-face {
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic Light";
     src: url(../fonts/IBMPlexSansArabic-Light.ttf),
 }
 @font-face {
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic Regular";
     src: url(../fonts/IBMPlexSansArabic-Regular.ttf),
 }
 @font-face {
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic SemiBold";
     src: url(../fonts/IBMPlexSansArabic-SemiBold.ttf),
 }
 @font-face {
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic Thin";
     src: url(../fonts/IBMPlexSansArabic-Thin.ttf),
 }
 /*================================
@@ -147,22 +133,16 @@ svg:hover {
 
 
 .nav-item a.nav-link {
-    font-family:
-    "IBM Plex Arabic"
-     "Open Sans"
-      sans-serif;
+    font-family:"IBM Plex Arabic Bold";
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 30px;
     padding-left: 0px !important;
     padding-right: 0px !important;
     padding: 0px;
-    font-family: 'Regular';
-    font-style: 14px;
-    font-weight: 300;
-    font-size: 17px !important;
+    font-size: 14px !important;
     line-height: 29px;
-    color: #000000;
+    color: #1D2E36;
     position: relative;
 }
 .show-drop .drop{
@@ -394,9 +374,7 @@ svg:hover {
     font-size: 15px;
     font-weight: 300;
     font-family:
-"IBM Plex Arabic"
-"Open Sans"
-sans-serif,
+    "IBM Plex Arabic Medium";
 }
 .app .text h2{
     font-weight: bold;
@@ -1040,26 +1018,25 @@ position: absolute;
     align-items: center;
     gap: 15px;
     position: relative;
-    top: 30%;
    }
    .program .bar{
     position: relative;
-    top: 30%;
+   }
+   .Psychological .prog{
+    max-width: 400px;
+    width: 100%;
    }
    .program .Psychological .prog-head{
     margin-top: 100px;
     display: flex;
     align-items: center;
     gap: 15px;
-    top: 10%;
    }
    .program .Psychological .bar{
     position: relative;
-    top: 10%;
    }
    .program .Psychological .rep{
     position: relative;
-    top: 10%;
    }
    .program .Psychological .rep .rep-one{
     display: flex;
@@ -1068,6 +1045,9 @@ position: absolute;
    }
    .program .Psychological .rep .rep-one p{
     margin-top: 10px;
+   }
+   .feeling{
+    margin-top: 30px;
    }
    /* =============================
              end Programs
@@ -2131,6 +2111,19 @@ sans-serif;
         display: flex;
         flex-direction: column;
     }
+    .app .text{
+        text-align: center;
+    }
+    .app .text .log-button {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .app .image img{
+        margin-top: 30px;
+    }
     #nav .navbar-brand img{
         width: 100px;
     }
@@ -2167,6 +2160,77 @@ sans-serif;
         flex-wrap: wrap;
         justify-content: center;
     }
+    .competent button {
+        margin-top: -4.3em;
+       }
+       .Consultations-text{
+        padding-top: 30px;
+       }
+    .Consultations .image-text{
+        display: none;
+    }
+    .Psychological img{
+        margin: 20px 0 40px 0;
+    }
+    .program .prog-head{
+        margin-top: 15px;
+    }
+    .program .bar {
+    }
+    .program .Psychological .prog-head {
+        margin-top: 30px;
+    }
+    .program .Psychological .bar {
+    }
+    .program .Psychological .rep {
+    }
+    #newsay{
+        margin-top: 10px;
+    }
+    .quality {
+        margin-top: 10px;
+    }
+    .quality button{
+        margin-bottom: 20px;
+    }
+    .specialist{
+        margin: 0px;
+    }
+    .specialist .box {
+        display: flex;
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+    .Consultations{
+        margin: 0px;
+    }
+    .contact .cotact-head {
+        padding: 20px 15px;
+        text-align: center;
+    }
+    .contact button{
+        margin-bottom: 30px;
+    }
+    .Consultations .Consultations-head .Consultations-text button {
+        margin-bottom: 30px;
+    }
+    .labayh{
+        margin-top: 10px;
+    }
+    .welfare{
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+    .card-content{
+        padding-right: 20px;
+    }
+    .labayh .labayh-cover{
+        padding: 50px 15px;
+    }
+    .footer-link-soc .app-logo {
+        padding: 5px 10px;
+    }
    }
    @media (max-width: 768px) {
     .get-behicel{
@@ -2181,6 +2245,7 @@ sans-serif;
         display: none!important;
     }
    }
+   
    /* =============================
               media
    ============================= */
