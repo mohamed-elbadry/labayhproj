@@ -2504,6 +2504,9 @@ sans-serif;
    .services .box p {
     width: 100%;
    }
+   .dollars .image-dolar img {
+    max-width: 95%;
+   }
 
 }
    
