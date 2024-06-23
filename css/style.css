@@ -3,39 +3,39 @@
 ==================================*/
 @font-face {
     font-family:
-    "IBM Plex Arabic Bold";
+    "IBM Plex Arabic Bold 700";
     src: url(../fonts/IBMPlexSansArabic-Bold.ttf),
 }
 
 @font-face {
     font-family:
-    "IBM Plex Arabic Medium";
+    "IBM Plex Arabic Medium 500";
     src: url(../fonts/IBMPlexSansArabic-Medium.ttf),
 }
 
 @font-face {
     font-family:
-    "IBM Plex Arabic ExtraLight";
+    "IBM Plex Arabic ExtraLight 200";
     src: url(../fonts/IBMPlexSansArabic-ExtraLight.ttf),
 }
 @font-face {
     font-family:
-    "IBM Plex Arabic Light";
+    "IBM Plex Arabic Light 300";
     src: url(../fonts/IBMPlexSansArabic-Light.ttf),
 }
 @font-face {
     font-family:
-    "IBM Plex Arabic Regular";
+    "IBM Plex Arabic Regular 400";
     src: url(../fonts/IBMPlexSansArabic-Regular.ttf),
 }
 @font-face {
     font-family:
-    "IBM Plex Arabic SemiBold";
+    "IBM Plex Arabic SemiBold 600";
     src: url(../fonts/IBMPlexSansArabic-SemiBold.ttf),
 }
 @font-face {
     font-family:
-    "IBM Plex Arabic Thin";
+    "IBM Plex Arabic Thin 100";
     src: url(../fonts/IBMPlexSansArabic-Thin.ttf),
 }
 /*================================
@@ -83,6 +83,16 @@ svg:hover {
     background-position: center;
     background-size: 100%;
    background-color: #B2E8EC;
+}
+#nav .work{
+    background-color: #f6f7fcae;
+}
+#nav .border:hover {
+    padding: 10px 17px;
+    border-color: #9badff !important;
+}
+#nav .border{
+    border: 3px solid #e5e8f5 !important;
 }
 #nav .button{
     gap: 20px;
@@ -2103,6 +2113,230 @@ sans-serif;
    /* =============================
              end standard
    ============================= */
+
+ /* =============================
+             Start Gate
+   ============================= */
+   .gate{
+    margin: 200px 0px 150px;
+   }
+   .gate .gate-text h2{
+    /* font-family:
+    "IBM Plex Arabic Regular 400"; */
+    font-size: 50px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 20px;
+   }
+   .gate .gate-text span{
+    font-weight: 400;
+   }
+   .gate .gate-text p{
+    color: #000000;
+    width: 97%;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+   }
+   .gate .gate-text .btn-gate{
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #7784E8;
+    transition: 1s;
+   }
+   .gate .gate-text .btn-gate:hover {
+    transform: scale(105%);
+}
+   .gate .gate-text .btn-gate a{
+    color: #fff;
+   }
+   .gate .image-gate{
+    transition: 1s;
+    cursor: pointer;
+   }
+   .gate img:hover{
+    transform: scale(105%);
+   }
+   /* =============================
+             End Gate
+   ============================= */
+   /* =============================
+             Start health
+   ============================= */
+
+.health{
+    background-color: #202757;
+    padding: 150px 0 150px 0;
+}
+.health h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.health .gate-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.health .gate-text .hea-text{
+    color: #fff;
+}
+.health .btn-gate{
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #7784E8;
+    transition: 1s;
+}
+.health .btn-gate:hover {
+    transform: scale(115%);
+}
+.health .btn-gate a{
+    color: #fff;
+   }
+.health .healthy{
+    display: flex;
+    gap: 30px;
+}
+.health .healthy .hea-box p{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.health .healthy .hea-box h3{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 2;
+    color: #A6A9BC;
+}
+ /* =============================
+             End health
+   ============================= */
+   /* =============================
+             Start Clints
+   ============================= */
+   .clints{
+    margin: 100px 0;
+   }
+   .clints .cliant-text h2{
+    margin: 20px 0 40px;
+   }
+   .clints .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .clints .box{
+    border: 2px solid #e5e8f5;
+    border-radius: 12px;
+    max-width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .clints .box img{
+    max-width: 50%;
+    margin: auto;
+   }
+   /* =============================
+             End Clints
+   ============================= */
+    /* =============================
+             Start Dollar
+   ============================= */
+   .dollars{
+    margin: 100px 0;
+   }
+   .dollars h2{
+    font-size: 48px;
+    color: #3D3D3D;
+    margin-bottom: 30px;
+   }
+   .dollars span{
+    font-size: 50px;
+    color: #5766E4;
+   }
+   .dollars p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    width: 92%;
+   
+   }
+   .dollars .dolar{
+    margin-bottom: -25px;
+   }
+   .dollars .gate-text .dollar-text{
+    color: #3D3D3D;
+    font-size: 18px;
+   }
+   .dollars .btn-dollar{
+    margin-top: 40px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: 3px solid #252D5F;
+    background-color: transparent;
+    transition: 1s;
+   }
+   .dollars .btn-dollar a{
+     color: #000000;
+   }
+   .dollars .btn-dollar:hover {
+    transform: scale(115%);
+}
+.dollars .image-dolar img{
+    position: absolute;
+    top: 20%;
+}
+    /* =============================
+             End Dollar
+   ============================= */
+/* =============================
+             Start Servisec
+   ============================= */
+   .services{
+    padding: 20px 0;
+}
+.heading h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+.heading p{
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    font-weight: 600;
+}
+.services .box{
+    border-radius: 12px;
+    margin-top: 20px;
+}
+.services .box p{
+  width: 80%;
+  margin-left: auto;
+}
+.services .btn-serv{
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #252D5F;
+    transition: 1s;
+}
+.services .btn-serv:hover{
+    transform: scale(120%);
+}
+.services .btn-serv a{
+    color: #000;
+}
+/* =============================
+             End Servisec
+   ============================= */
    /* =============================
               media
    ============================= */
@@ -2244,7 +2478,34 @@ sans-serif;
     #team .owl-dots{
         display: none!important;
     }
+    .gate{
+        margin: 70px 0px 50px;
+       }
+       .gate .gate-text h2{
+       font-size: 30px;
+       }
+       .gate .gate-text .btn-gate{
+        margin-bottom: 30px;
+       }
+
+       .health .healthy{
+        margin-top: 30px;
+       }
+       .dollars .btn-dollar{
+        margin-bottom: 30px;
+       }
+       .dollars {
+        margin-bottom: 300px;
+    }
+    .heading p {
+        font-size: 20px;
+        width: 90%;
    }
+   .services .box p {
+    width: 100%;
+   }
+
+}
    
    /* =============================
               media
