@@ -2467,7 +2467,7 @@ sans-serif;
 
 .prob .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span
  {
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 41px;
@@ -2476,10 +2476,11 @@ sans-serif;
     background-color: white;
     border-radius: 50%;
     font-size: 20px;
+    display: inline-block;
 }
 .prob .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-next span
  {
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 41px;
@@ -2488,6 +2489,7 @@ sans-serif;
     background-color: white;
     border-radius: 50%;
     font-size: 20px;
+    display: inline-block;
 }
 
 /* =============================
@@ -2788,13 +2790,16 @@ sans-serif;
              Start Special
    ============================= */
 .special{
-    padding: 150px 0;
+   margin: 85px 0 0 0;
     background-color:#7676FF;
-    height: 100vh;
+    height: calc(100vh - 85px);
+    overflow: hidden;
     border-bottom: 2px solid #F1A196;
 }
 .special .image{
-    margin-top: 8%;
+    position: relative;
+    bottom: -50px;
+
 }
 .special .special-text{
     margin-top: 10%;
@@ -2841,7 +2846,7 @@ sans-serif;
              Ster develop
    ============================= */
 .develop{
-    padding: 100px;
+    padding: 100px 0px;
     background-color: #F6F7FC;
 }
 .develop h2{
@@ -2930,6 +2935,7 @@ sans-serif;
     padding: 15px 20px;
     border: 1px solid #486DF6;
     border-radius: 10px;
+    margin-inline: 5px;
    }
    .highlight .competent-box .box-text .image img{
      width: 150px;
@@ -2992,6 +2998,9 @@ sans-serif;
     display: flex;
     position: absolute;
     bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 .highlight  .owl-nav{
     display: flex;
@@ -3505,9 +3514,32 @@ sans-serif;
     max-width: 95%;
    }
    .special {
-    height:110vh;
+    height:90vh;
+    margin: 75px 0px 0px;
+
 }
-.problem .owl-theme .owl-nav {
+.highlight {
+    padding: 50px 0 0 0;
+}
+.special h2{
+    margin: 20px 0;
+}
+.special .special-text{
+    margin-top: 15%;
+}
+.owl-carousel .owl-nav button.owl-prev span {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 41px;
+    height: 41px;
+    border: 2px solid #eff2f5;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    display: inline-block;
+}
+/* .problem .owl-theme .owl-nav {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -3517,6 +3549,9 @@ sans-serif;
     height: 0;
     width: 100%;
     transform: translateY(15px);
+} */
+.prob:after {
+    left: 48px;
 }
 .Consultations-blog .Consultations-head .Consultations-text button{
     margin-bottom: 20px;
@@ -3550,7 +3585,19 @@ sans-serif;
     margin-top: 10px;
     margin-right: 0px;
 }
-
+.highlight .competent-box .box-text .image img {
+    width: 95px;
+    height: 95px;
+}
+.count .count-head {
+    flex-wrap: wrap;
+}
+.count .count-box {
+    padding-block: 50px;
+}
+.services{
+    padding: 0px 0px;
+}
 }
    
    /* =============================

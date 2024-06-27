@@ -111,7 +111,6 @@ $(document).ready(function () {
 $('#team').owlCarousel({
     rtl: true,
     loop:true,
-    margin:10,
     nav:true,
     dots:true,
     dotsEach: 4,
