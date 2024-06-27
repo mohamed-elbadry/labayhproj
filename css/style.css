@@ -2634,13 +2634,13 @@ sans-serif;
     border-radius: 15px;
     background-color: #FDFAE9;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 .search .search-btn a{
     color: #000;
     font-size: 14px;
     font-family:
     "IBM Plex Arabic Light 300";
-    margin-bottom: 20px;
 }
 .pt-select-con select {
     color: #000;
@@ -3494,6 +3494,9 @@ sans-serif;
     .heading p {
         font-size: 20px;
         width: 90%;
+   }
+   .search .search-btn{
+    margin-bottom: 30px;
    }
    .services .box p {
     width: 100%;
