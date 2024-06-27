@@ -129,6 +129,8 @@ svg:hover {
     .navbar-collapse.collapse.show {
         overflow-y: auto;
         max-height: 60vh;
+        background-color: blue;
+        float: left;
         -webkit-overflow-scrolling: touch;
     }
 
@@ -143,7 +145,8 @@ svg:hover {
 
 
 .nav-item a.nav-link {
-    font-family:"IBM Plex Arabic Bold";
+    font-family:
+    "IBM Plex Arabic Regular 400";
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 30px;
@@ -151,8 +154,8 @@ svg:hover {
     padding-right: 0px !important;
     padding: 0px;
     font-size: 14px !important;
-    line-height: 29px;
-    color: #1D2E36;
+    line-height: 2px;
+    color: #000;
     position: relative;
 }
 .show-drop .drop{
@@ -200,9 +203,19 @@ svg:hover {
 
 
 }
+.nav-item .nav-link.active::before {
+    content: "";
+    position: absolute;
+    background: #486DF6;
+    right: 0;
+    width: 12px;
+    height: 3px;
+    border-radius: 10px;
+    bottom: -17px;
+}
 
 .nav-item .nav-link.active {
-    color: #486DF6;
+    color: #486DF6;;
 }
 
 .nav-item .nav-link.active::before {
@@ -302,8 +315,7 @@ svg:hover {
 
 @media (max-width:991px) {
     .navbar-nav {
-        text-align: center;
-        /* height: 64vh; */
+       margin-right: 10px;
     }
 
     .nav-item a.nav-link {
@@ -3299,7 +3311,30 @@ sans-serif;
  /* =============================
               media
    ============================= */
+   .nav-item .nav-link.active::before {
+    content: "";
+    position: absolute;
+    background: #486DF6;
+    right: 0;
+    width: 12px;
+    height: 3px;
+    border-radius: 10px;
+    bottom: -17px;
+}
    @media (max-width: 567px) {
+    .nav-item .nav-link.active::before {
+        content: "";
+        position: absolute;
+        background: #FFFA45;
+        right: 0;
+        width: 12px;
+        height: 3px;
+        border-radius: 10px;
+        bottom: -17px;
+    }
+    .nav-item .nav-link.active {
+        color: #FFFA45;
+    }
     .app .row{
         display: flex;
         flex-direction: column;
