@@ -184,3 +184,38 @@ $('#team').owlCarousel({
             }
         }
       })
+      $('.prob').owlCarousel({
+        rtl: true,
+        loop:true,
+       
+        nav:true,
+        dots: false,
+        autoplay: true,
+        autoWidth: true,
+        responsive:{
+            0:{
+                items:2
+            },
+            900:{
+                items:4
+            },
+            1000:{
+                items:7
+            }
+        }
+      })
+
+      // Facts counter
+$('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 2000
+});
+
+
+// Date and time picker
+$('.date').datetimepicker({
+    format: 'L'
+});
+$('.time').datetimepicker({
+    format: 'LT'
+});

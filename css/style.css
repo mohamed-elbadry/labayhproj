@@ -1012,6 +1012,7 @@ svg:hover {
 position: absolute;
     top: 44%;
     transform: translateY(-50%);
+    border: none;
 }
    /* =============================
              end Competent
@@ -1549,11 +1550,11 @@ position: absolute;
   color: #040505;
   font-size: 16px;
 }
-.pt-search-con {
+.contact .pt-search-con {
     position: relative;
     margin-top: 30px;
 }
-.pt-search-con input {
+.contact .pt-search-con input {
     background: #FFFFFF;
     border: 2px solid #DFECF7;
     height: 45px;
@@ -1563,7 +1564,7 @@ position: absolute;
     border-radius: 11px;
     box-shadow: 0px 10px 50px rgb(239 246 252 / 60%);
 }
-.pt-search-con button[type="submit"] {
+.contact .pt-search-con button[type="submit"] {
     position: absolute;
     left: 0;
     height: 100%;
@@ -2337,7 +2338,751 @@ sans-serif;
 /* =============================
              End Servisec
    ============================= */
-   /* =============================
+/* =============================
+             Start Competent
+   ============================= */
+   .competen{
+    margin: 100px 0;
+    background-image: url(../img/Comp-cover1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+   }
+   .competen h2{
+    color: #000000;
+    font-size: 40px;
+    font-family:
+    "IBM Plex Arabic Bold 700";
+    margin-bottom: 20px;
+   }
+   .competen p{
+    color: #000000;
+    font-size: 22px;
+    font-family:
+    "IBM Plex Arabic Regular 400";
+    line-height: 2;
+    margin-bottom: 20px;
+   }
+   .competen .comp-text .log-button{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    }
+    .competen .comp-text .log-button .logo-text span{
+    color: #ffffff;
+    font-size: 10px;
+    font-family:
+    "IBM Plex Arabic Regular 400";
+   }
+   .competen .comp-text .log-button .logo-text p{
+    color: #ffffff;
+    font-size: 14px;
+    font-family:
+    "IBM Plex Arabic SemiBold 600";
+}
+.competen .comp-text .log-button .app-logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 25px;
+    background-color: #000;
+    border-radius: 20px;
+}
+.competen .comp-text .log-button .app-logo:hover{
+    background-color: #486DF6;
+}
+/* =============================
+             End Competent
+   ============================= */
+/* =============================
+             Start Problem
+   ============================= */
+.problem{
+    /* margin: 20px 0; */
+    border-top: 2px solid #eff2f5;
+    border-bottom: 2px solid #eff2f5;
+    padding-block: 2rem;
+}
+.prob {
+    padding-inline: 55px;
+    position: relative;
+}
+.prob:after {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 12%, rgba(255, 255, 255, 0) 100%);
+    width: 25%;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.problem .item a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    font-family:
+    "IBM Plex Arabic Regular 400";
+    padding-left: 20px;
+}
+.problem .owl-theme .owl-nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 0;
+    width: 100%;
+    transform: translateY(15px);
+}
+
+.prob .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span
+ {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 41px;
+    height: 41px;
+    border: 2px solid #eff2f5;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.prob .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-next span
+ {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 41px;
+    height: 41px;
+    border: 2px solid #eff2f5;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+/* =============================
+             End Problem
+   ============================= */
+/* =============================
+             Start Search
+   ============================= */
+.search{
+    margin: 50px 0;
+}
+.search .name-doc{
+    border: 1px solid #D9DEE8;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #FBFDFF;
+}
+.search .name-doc p{
+    margin-right: 10px;
+    font-size: 14px;
+    font-family:
+    "IBM Plex Arabic Medium 500";
+    font-weight: bold;
+}
+.search .name-doc .pt-search-con {
+    position: relative;
+    margin-top: 30px;
+}
+.search .name-doc .pt-search-con input {
+    background: #FFFFFF;
+    border: 2px solid #DFECF7;
+    height: 45px;
+    width: 100%;
+    padding: 11px 12px;
+    font-size: .9em;
+    border-radius: 11px;
+    box-shadow: 0px 10px 50px rgb(239 246 252 / 60%);
+}
+.search .name-doc .pt-search-con img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border: none;
+    background: none;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0px;
+    border-radius: 11px;
+    padding: 2px 15px 5px;
+    color: #fff;
+}
+.accordion-item:last-of-type .accordion-button.collapsed{
+    font-size: 14px;
+    font-family:
+    "IBM Plex Arabic Regular 400";
+    color: #030E1D;
+}
+.search .accordion-button {
+    color: #030E1D;
+    font-size: 17px;
+    padding-inline: 0px;
+    text-align: right;
+    transition: all 0.3s linear;
+    font-family: 
+    "IBM Plex Arabic"
+    "Open Sans"
+    sans-serif;
+}
+
+.search .accordion-button span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ADE6F5;
+    margin-left: 10px;
+   
+
+}
+
+.search .accordion-button:focus {
+    z-index: 3;
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.search .accordion-button::after {
+    margin-right: auto;
+    margin-left: 0px;
+    background-color: transparent;
+    border: 2px solid #EAF3FB;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    background-size: 1rem;
+    background-position: center;
+}
+
+.search .accordion-button:not(.collapsed) {
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    background-color: transparent !important;
+}
+
+.search .accordion-body {
+    font-family: 
+    "IBM Plex Arabic"
+    "Open Sans"
+    sans-serif;
+    color: #797986    ;
+    font-size: 14px;
+    padding: 1rem 0rem !important;
+}
+.pt-filter-nav-field {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: .93em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.search .accordion-item {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.search .accordion-flush .accordion-item:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.labayh-custom-select {
+    position: relative;
+    width: 100%;
+}
+.search .search-btn{
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #FDFAE9;
+    margin-top: 30px;
+}
+.search .search-btn a{
+    color: #000;
+    font-size: 14px;
+    font-family:
+    "IBM Plex Arabic Light 300";
+}
+.pt-select-con select {
+    color: #000;
+    outline: none;
+    background: #FFFFFF;
+    border: 2px solid #DFECF7;
+    height: 49px;
+    width: 100%;
+    padding: 11px 12px;
+    font-size: .9em;
+    border-radius: 13px;
+    box-shadow: 0px 10px 50px rgb(239 246 252 / 60%);
+    appearance: none;
+    background-image: url(../img/acordion-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+
+}
+.pt-select-con .labayh-custom-select label{
+    width: 100%;
+}
+.labayh-custom-select-input{
+    width: 100%;
+}
+.pt-filter-sort-list{
+    padding: 10px;
+    border: 1px solid #D9DEE8;
+    border-radius: 15px;
+    box-shadow: 0px 3px 28px rgb(211 226 234 / 15%);
+}
+.search .accordion-body .list{
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 210px;
+    overflow-y : scroll;
+    scroll-margin: 20px;
+    /* scroll-padding: 10px; */
+}
+.search .accordion-body .list::-webkit-scrollbar {
+    width: 5px;
+  }
+  .search .accordion-body .list::-webkit-scrollbar-thumb {
+    background: #D0D4DE;
+    border-radius: 7px;
+  }
+  
+.search .accordion-body .list::-webkit-scrollbar-track {
+    background: #fbfbff;
+    border-radius: 11px;
+  }
+.search .card{
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #E3F0FB;
+    box-shadow: 0px 3px 15px rgb(211 226 234 / 15%);
+    margin-bottom: 20px;
+}
+.search .card img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.search .card-body{
+    text-align: right;
+}
+.search .card-body{
+    float: right;
+}
+.search .card-body a{
+    color: #030E1D;
+    font-size: 16px;
+    font-family:
+    "IBM Plex Arabic Medium 500";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.search .card-body p a{
+    color: #9EA2B6;
+    font-size: 14px;
+}
+.search .card-body span{
+   border-radius: 9px;
+    line-height: 1;
+    padding: 3px 10px 4px 6px;
+    border: 1px solid #D9DEE8;
+    box-shadow: 0px 3px 28px rgb(211 226 234 / 30%);
+    margin: 3px 0 10px 0;
+}
+.search .card-body span img{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 5px;
+}
+.search .card-body h2 a{
+    font-size: 12px;
+    color: #0A284D;
+}
+.search nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.search nav ul li{
+    margin: 10px;
+}
+.search nav .page-link {
+    position: relative;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.search .page-link{
+   padding: 5px 10px;
+}
+.search nav .owl{
+    box-shadow: 0px 4px 10px rgb(138 170 197 / 11%), 0 0 0 2px #e3f0fb inset;
+    border-radius: 10px;
+}
+.page-item:first-child .page-link {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+.page-item:last-child .page-link {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search nav .page-link:hover{
+    transform: scale(105%);
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #B7C5FF;
+    border-radius: 10px;
+}
+/* =============================
+             Start Search
+   ============================= */
+/* =============================
+             Start Special
+   ============================= */
+.special{
+    padding: 150px 0;
+    background-color:#7676FF;
+    height: 100vh;
+    border-bottom: 2px solid #F1A196;
+}
+.special .image{
+    margin-top: 8%;
+}
+.special .special-text{
+    margin-top: 10%;
+}
+.special h2{
+  color: #FFFFFF;
+  font-size: 37px;
+  font-family:
+  "IBM Plex Arabic SemiBold 600";
+  margin-bottom: 20px;
+}
+.special p{
+  color: #ffffff;
+  font-size: 21px;
+  font-family:
+    "IBM Plex Arabic Regular 400";
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.special .special-button{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+.special .special-button .special-btn{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 10px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.special .special-button .special-btn a{
+    color: #080808;
+    font-size: 16px;
+    font-family:
+    "IBM Plex Arabic Light 300";
+}
+/* =============================
+             End Special
+   ============================= */
+/* =============================
+             Ster develop
+   ============================= */
+.develop{
+    padding: 100px;
+    background-color: #F6F7FC;
+}
+.develop h2{
+    color: #0F0F0F;
+    font-size: 28px; 
+    font-style: normal;
+    margin-bottom: 40px;
+}
+.develop .box{
+    /* background-color: #FFFFFF;
+    border-radius: 20px;
+    border: none !important; */
+
+    background-color: #ffffff;
+    margin-top: 30px;
+    margin-left: 5px;
+    text-align: center;
+    padding: 42px 28px;
+    border-radius: 12px;
+}
+.develop .box .image{
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+    width: 140px;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/icon-bg2.svg);
+    background-size: contain;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.develop .box .image:hover{
+    transform: scale(1.1);
+}
+.develop .box .develop-head h3{
+   color: #0F0F0F;
+   font-size: 18px;
+   font-family:
+   "IBM Plex Arabic Light 300";
+}
+.develop .box .develop-head p{
+    color: #8b8a9b;
+    font-size: 16px;
+    font-family:
+    "IBM Plex Arabic Regular 400";
+}
+/* =============================
+             End develop
+   ============================= */
+/* =============================
+             Start Highlight
+   ============================= */
+.highlight{
+    padding: 100px 0 0 0;
+}
+/* .highlight .high-head{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+} */
+.highlight .high-head h2{
+    font-size: 30px;
+    font-family:
+    "IBM Plex Arabic Bold 700";
+    margin-bottom: 40px;
+}
+.highlight .competent .competent-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+}
+.highlight .competent-box .box-text{
+    padding: 15px 20px;
+    border: 1px solid #486DF6;
+    border-radius: 10px;
+   }
+   .highlight .competent-box .box-text .image img{
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     margin-bottom: 10px;
+   }
+   .highlight .competent-box .box-text .text{
+    text-align: center;
+   }
+   .highlight .competent-box .box-text h2 a{
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+   }
+   .highlight .competent-box .box-text p a{
+    color: #A3A6BA;
+    font-size: 14px;
+   }.highlight .competent-box .box-text span{
+    border: 1px solid #486DF6;
+    border-radius: 25px;
+    padding: 5px;
+   }
+   .highlight .competent-box .box-text span a{
+        color: #000;
+   }
+   .highlight .competent-box .box-text span a img{
+     width: 24px;
+     height: 24px;
+   }
+   .highlight button{
+    color: #030303;
+    font-size: 1em;
+    background-color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    font-weight: 400;
+    border-color: #e3f0fb;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    margin-top: -3em;
+    margin-bottom: 80px;
+    margin-left: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-top: 14px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    box-shadow: 0px 2px 25px 0px rgba(220, 228, 240, 0.2);
+    display: block;
+    margin-right: auto;
+}
+.highlight .competent-box .owl-dots {
+    display: flex;
+    position: absolute;
+    bottom: -70px;
+}
+.highlight  .owl-nav{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    font-size: 30px;
+}
+.highlight button a{
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* =============================
+             End Highlight
+   ============================= */
+/* =============================
+             Start Count
+   ============================= */
+   .count{
+    background-color: #725FFE;
+    
+   }
+   .count .count-head{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+   }
+   .count .count-box{
+      padding: 100px 0;
+      text-align: center;
+   }
+   .count .count-box h2{
+      color: #ffffff;
+      font-size: 35px;
+      font-family:
+      "IBM Plex Arabic Bold 700";
+      margin-bottom: 20px;
+   }
+   .count .count-box p{
+     color: #FFEA40;
+     font-size: 20px;
+     width: 200px;
+     font-family:
+      "IBM Plex Arabic Bold 700";
+   }
+/* =============================
+             End Count
+   ============================= */
+/* =============================
+             start blog
+   ============================= */
+   .blog-laby{
+    padding: 120px 0 30px;
+    background: #F3F8FF;
+    position: relative;
+   }
+   .blog-laby h2{
+    color: #000000;
+    font-size: 22px;
+    font-family:
+    "IBM Plex Arabic SemiBold 600";
+   }
+   .blog-laby p{
+    color: #141c7a;
+    font-size: 16px;
+    font-family:
+    "IBM Plex Arabic Regular 400";
+   }
+   .blog-laby .pt-search-con {
+    position: relative;
+}
+.blog-laby .pt-search-con input {
+    background: #FFFFFF;
+    border: 2px solid #DFECF7;
+    height: 45px;
+    width: 100%;
+    padding: 11px 12px;
+    font-size: .9em;
+    border-radius: 11px;
+    box-shadow: 0px 10px 50px rgb(239 246 252 / 60%);
+    margin-bottom: 10px;
+}
+.blog-laby .pt-search-con input .placeholder{
+    color: #7F82A6;
+    font-size: 16px;
+}
+.blog-laby .pt-search-con input:focus{
+    border: none;
+}
+.blog-laby .pt-search-con img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border: none;
+    background: none;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0px;
+    border-radius: 11px;
+    padding: 7px 15px 15px;
+    color: #0000;
+}
+.blog-laby .lap-text svg{
+    color: #7F82A6;
+    font-size: 11px;
+}
+.blog-laby .lap-text a{
+    color: #7F82A6;
+    font-size: 11px;
+}
+/* =============================
+             end blog
+   ============================= */
+ /* =============================
               media
    ============================= */
    @media (max-width: 567px) {
@@ -2507,6 +3252,9 @@ sans-serif;
    .dollars .image-dolar img {
     max-width: 95%;
    }
+   .special {
+    height: 450vh;
+}
 
 }
    
