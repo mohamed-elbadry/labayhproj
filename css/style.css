@@ -702,7 +702,7 @@ svg:hover {
 
 .model-button2 a,
 .model-button2 button {
-    color: #49D38E;
+    color: #000;
     font-size: 22px;
     display: flex;
     align-items: center;
@@ -1594,7 +1594,18 @@ position: absolute;
    border-radius: 20px;
 }
 .labayh .labayh-cover h2{
-    
+    color: #FFFFFF;
+    font-size: 35px;
+    font-family:
+    "IBM Plex Arabic Bold 700";
+    margin-bottom: 15px;
+}
+.labayh .labayh-cover p{
+    color: #fff;
+    font-size: 20px;
+    font-family:
+    "IBM Plex Arabic Medium 500";
+    margin-bottom: 20px;
 }
 .labayh .labayh-cover .download{
     display: flex;
@@ -2617,6 +2628,7 @@ sans-serif;
     font-size: 14px;
     font-family:
     "IBM Plex Arabic Light 300";
+    margin-bottom: 20px;
 }
 .pt-select-con select {
     color: #000;
@@ -2643,7 +2655,7 @@ sans-serif;
 }
 .pt-filter-sort-list{
     padding: 10px;
-    border: 1px solid #D9DEE8;
+    /* border: 1px solid #D9DEE8; */
     border-radius: 15px;
     box-shadow: 0px 3px 28px rgb(211 226 234 / 15%);
 }
@@ -3082,6 +3094,208 @@ sans-serif;
 /* =============================
              end blog
    ============================= */
+/* =============================
+             Start card-blog
+   ============================= */
+.card-blog{
+
+}
+.card-blog .card-box img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.card-blog .card-box img:hover{
+    transform: scale(1.05);
+}
+.card-blog .card-box .card-body-head button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #486DF6;
+    margin: 10px 0;
+}
+.card-blog .card-box .card-body-head button a{
+    color: #fff;
+}
+.card-blog .card-body{
+    padding: 0px;
+    margin-top: 10px;
+}
+.card-blog .card-body a{
+    color: #000;
+    font-size: 16px;
+    font-family:
+    "IBM Plex Arabic SemiBold 600";
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.card-blog .card-body a:hover{
+    color: #486DF6;
+}
+.card-blog .card-body p{
+    color: #0A284D;
+    font-size: 14px;
+    font-family:
+    "IBM Plex Arabic Regular 400";
+    margin-top: 10px;
+}
+.card-blog nav{
+    background-color: #FAFCFE;
+}
+/* =============================
+             end card-blog
+   ============================= */
+/* =============================
+             Consultations
+   ============================= */
+   .Consultations-blog{
+    
+   }
+   .Consultations-blog .Consultations-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFECEA;
+    margin-top: 50px;
+    border-radius: 15px;
+   }
+   .Consultations-blog .Consultations-head
+   .Consultations-text h2{
+    font-size: 19px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+   }
+   .Consultations-blog .Consultations-head
+   .Consultations-text p{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 20px;
+   }
+   .Consultations-blog .Consultations-head
+   .Consultations-text button{
+    background-color: #486DF6;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+   }
+   .Consultations-blog .Consultations-head
+   .Consultations-text button a{
+    color: #fff;
+   }
+   .Consultations-blog .Consultations-head
+    .image-text img{
+        width: 219px;
+        height: 260px;
+   }
+   .Consultations-blog .consult{
+       background-image: url(../img/ads-bg.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+       margin-top: 50px;
+       height: 84%;
+       padding: 30px 20px;
+       border-radius: 15px;
+   }
+   .Consultations-blog 
+   .Consultations-text h2{
+    font-size: 19px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+   }
+   .Consultations-blog 
+   .Consultations-text p{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 20px;
+   }
+   .Consultations-blog 
+   .Consultations-text button{
+    background-color: #fff;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+   }
+   .Consultations-blog 
+   .Consultations-text button a{
+    color: #000;
+   }
+   /* =============================
+             end Consultations
+   ============================= */
+/* =============================
+             start subscribe
+   ============================= */
+   .subscribe{
+    margin: 50px 0;
+   }
+   .subscribe .subscribe-lap{
+    background-color: #6777FF;
+    border-radius: 25px;
+    padding: 50px;
+   }
+   .subscribe h2{
+    color: #FFFFFF;
+    font-size: 26px;
+    font-family:
+    "IBM Plex Arabic SemiBold 600";
+    margin-bottom: 20px;
+   }
+   .subscribe p{
+    color: #ffffff;
+    font-size: 17px;
+    font-family:
+    "IBM Plex Arabic Light 300";
+    margin-bottom: 20px;
+   }
+   .subscribe .subscribe-lap .pt-search-lap{
+    position: relative;
+    margin-top: 10px !important;
+    margin-bottom: 10px
+   }
+   .subscribe .subscribe-lap .pt-search-lap input {
+    background: #FFFFFF;
+    border: 2px solid #DFECF7;
+    height: 45px;
+    width: 85%;
+    padding: 11px 12px;
+    font-size: .9em;
+    border-radius: 11px;
+    box-shadow: 0px 10px 50px rgb(239 246 252 / 60%);
+}
+ .subscribe .subscribe-lap .pt-search-lap button[type="submit"] {
+    left: 0;
+    height: 100%;
+    border: none;
+    background: none;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0px;
+    background: #FFFA45;
+    border-radius: 11px;
+    padding: 8px 15px;
+    color: #000;
+    margin-right: 10px;
+}
+.subscribe .sup-image{
+    position: relative;
+}
+.subscribe .sup-image img{
+    height: 300px;
+    position: absolute;
+   bottom: -203px;
+   left: 5%;
+}
+/* =============================
+             end subscribe
+   ============================= */
  /* =============================
               media
    ============================= */
@@ -3253,7 +3467,50 @@ sans-serif;
     max-width: 95%;
    }
    .special {
-    height: 450vh;
+    height:110vh;
+}
+.problem .owl-theme .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 27px;
+    top: 0;
+    margin: 0;
+    height: 0;
+    width: 100%;
+    transform: translateY(15px);
+}
+.Consultations-blog .Consultations-head .Consultations-text button{
+    margin-bottom: 20px;
+}
+.subscribe .subscribe-lap {
+    height: 479px;
+}
+.subscribe .sup-image {
+    /* width: 150px;
+    height: 150px;
+    position: absolute;
+        bottom: -173px;
+        left: -15%; */
+        text-align: center;
+}
+.subscribe .sup-image img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 15%;
+}
+.subscribe .subscribe-lap .pt-search-lap{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe .subscribe-lap .pt-search-lap input{
+    width: 100%;
+}
+.subscribe .subscribe-lap .pt-search-lap button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0px;
 }
 
 }
