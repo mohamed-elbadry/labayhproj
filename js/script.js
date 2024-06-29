@@ -218,3 +218,14 @@ $('.date').datetimepicker({
 $('.time').datetimepicker({
     format: 'LT'
 });
+
+
+// Get the hidden div and the exit button
+const hiddenDiv = document.getElementById('hidden-div');
+const exitButton = document.getElementById('exit-button');
+
+// Add a click event listener to the exit button
+exitButton.addEventListener('click', () => {
+  // Hide the hidden div
+  hiddenDiv.style.display = 'none';
+});

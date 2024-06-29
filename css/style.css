@@ -74,52 +74,54 @@ svg:hover {
 /*================================
       start first-nav
 ==================================*/
-/* .first-nav{
-    padding: 20px 0;
+.first-nav{
+    padding: 50px 0;
     margin: 60px 0 0 0;
-    display: block;
+    display:flex;
+    justify-content: space-between;
+    display: none;
 }
 .first-nav .application{
     display: flex;
     align-items: center;
     gap: 20px;
     position: relative;
-}
-.first-nav .application .image{
+  }
+  .first-nav .application .image{
     align-items: center;
-}
-.first-nav .application .image a{
+  }
+  .first-nav .application .image a{
     color: #000;
     background-color: #F1F2F9;
-}
-.first-nav .application .image a svg{
+  }
+  .first-nav .application .image a svg{
     position: absolute;
     top: 15%;
     right: -5px;
     transform: translate(-50%, -50%);
-}
-.first-nav .application .image img{
+  }
+  .first-nav .application .image img{
     width: 50px;
     height: 50px;
     padding: 10px;
     border: 1px solid;
     box-shadow: 0px 3px 28px rgb(211 226 234 / 25%), 0 0 0 2px rgb(180 188 208 / 18%);
-}
-.first-nav .application .first-text h2{
+  }
+  .first-nav .application .first-text h2{
     display: block;
     font-size: 1.1em;
     line-height: 1.2;
-}
-.first-nav .application .first-text p{
+  }
+  .first-nav .application .first-text p{
     color: #5B5D69;
     font-size: 0.9em;
     display: block;
-}
-.first-nav .application .first-text .svg-iconapp{
+  }
+  .first-nav .application .first-text .svg-iconapp{
    display: flex;
    gap: 5px;
-}
- .first-nav button{
+  }
+  .first-nav button{
     display: block;
     background: #486DF6;
     color: #fff;
@@ -128,13 +130,13 @@ svg:hover {
     font-size: 1em;
     border-radius: 100px;
     border: none;
-    position: relative;
+    /* position: relative;
     right: 80px;
-    top: -10px;
-}
-.first-nav button a{
+    top: -10px; */
+  }
+  .first-nav button a{
     color: #fff;
-} */
+  }
 /*================================
       End first-nav
 ==================================*/
@@ -3541,6 +3543,17 @@ sans-serif;
     }
    }
    @media (max-width: 768px) {
+    .first-nav{
+        padding: 30px 0;
+        justify-content: space-between;
+        display: flex;
+    }
+    .first-nav .application .image a svg {
+        position: absolute;
+        top: 0px;
+        right: -5px;
+        transform: translate(-50%, -50%);
+    }
     .get-behicel{
         justify-content: center;
         flex-wrap: wrap;
