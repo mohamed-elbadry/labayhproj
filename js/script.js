@@ -212,12 +212,12 @@ $('[data-toggle="counter-up"]').counterUp({
 
 
 // Date and time picker
-$('.date').datetimepicker({
-    format: 'L'
-});
-$('.time').datetimepicker({
-    format: 'LT'
-});
+// $('.date').datetimepicker({
+//     format: 'L'
+// });
+// $('.time').datetimepicker({
+//     format: 'LT'
+// });
 
 
 // Get the hidden div and the exit button
@@ -225,7 +225,7 @@ const hiddenDiv = document.getElementById('hidden-div');
 const exitButton = document.getElementById('exit-button');
 
 // Add a click event listener to the exit button
-exitButton.addEventListener('click', () => {
-  // Hide the hidden div
+exitButton.addEventListener('click', function (event){
+    event.preventDefault();
   hiddenDiv.style.display = 'none';
 });
