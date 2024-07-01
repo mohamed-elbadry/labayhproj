@@ -3529,8 +3529,19 @@ sans-serif;
         border-radius: 10px;
         bottom: -17px;
     }
-    .nav-item .nav-link.active {
-        color: #FFFA45;
+    .nav-item a.nav-link.active {
+        color: #FFFA45 !important;
+        font-size: 20px !important;
+        font-family:
+        "IBM Plex Arabic Bold 700";
+       
+    }
+    .nav-item a.nav-link {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        color: #fff !important;
+        font-family: "IBM Plex Arabic Bold 700";
     }
     .app .row{
         display: flex;
@@ -3809,6 +3820,15 @@ sans-serif;
 }
 .app-foot{
     order: -1;
+}
+.competen {
+    background-image: url(../img/Comp-cover1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
 }
 }
 
