@@ -235,6 +235,9 @@ svg:hover {
     position: relative;
     opacity: 0.75;
 }
+/* .nav-item a.nav-link:hover{
+    color: #486DF6;
+} */
 .show-drop .drop{
     background-color: #fff;
     padding: 10px 5px;
@@ -258,7 +261,7 @@ svg:hover {
     font-weight: 400;
 }
 .nav-item a.nav-link:hover{
-    color: #486DF6;
+    color: #486DF6 !important;
 }
 
 @-moz-document url-prefix() {
