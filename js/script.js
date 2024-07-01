@@ -1,3 +1,12 @@
+const myElement = document.getElementById('nav');
+
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 100) {
+      myElement.classList.add('nav-scroll');
+    } else {
+      myElement.classList.remove('nav-scroll');
+    }
+  });
 $(document).ready(function () {
     /* ===========================
              wow 
@@ -32,6 +41,7 @@ $(document).ready(function () {
                 'height': '100%'
             });
         }
+
     })
 
     /* ===========================
@@ -229,3 +239,4 @@ exitButton.addEventListener('click', function (event){
     event.preventDefault();
   hiddenDiv.style.display = 'none';
 });
+

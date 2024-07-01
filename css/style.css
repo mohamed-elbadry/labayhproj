@@ -148,7 +148,11 @@ svg:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-   background-color: #B2E8EC;
+   background-color: transparent;
+}
+.nav-scroll{
+    box-shadow: 0px 3px 28px rgb(211 226 234 / 15%), 0 0 0 2px rgb(180 188 208 / 16%);
+    background-color: rgba(255, 255, 255, 0.9) !important;
 }
 #nav .work{
     background-color: #f6f7fcae;
@@ -169,10 +173,10 @@ svg:hover {
     position: relative;
 }
 
-.navbar .container-fluid {
+/* .navbar .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
-}
+} */
 
 .navbar-brand {
     margin-top: 15px;
@@ -205,24 +209,31 @@ svg:hover {
     }
 }
 
+.nav-item a.nav-link svg{
+    position: relative;
+    top: -5px;
+    left: -2px;
+}
 
-
-
+.btn-nav svg path:hover{
+    stroke: #0000;
+}
 
 
 .nav-item a.nav-link {
     font-family:
-    "IBM Plex Arabic Regular 400";
+    "IBM Plex Arabic Bold 700";
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 30px;
     padding-left: 0px !important;
     padding-right: 0px !important;
     padding: 0px;
-    font-size: 14px !important;
+    font-size: 13px !important;
     line-height: 2px;
-    color: #000;
+    color: #1D2E36 !important;
     position: relative;
+    opacity: 0.75;
 }
 .show-drop .drop{
     background-color: #fff;
@@ -280,8 +291,8 @@ svg:hover {
     bottom: -17px;
 }
 
-.nav-item .nav-link.active {
-    color: #486DF6;;
+.nav-item a.nav-link.active {
+    color: #486DF6 !important;
 }
 
 .nav-item .nav-link.active::before {
@@ -305,21 +316,20 @@ svg:hover {
     background: transparent;
     border-radius: 10px;
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
+    "IBM Plex Arabic Light 300",
+    "Open Sans",
     sans-serif;
     font-style: normal;
     color: #fff;
-    font-weight: 300;
-    font-size: 1em;
-    line-height: 29px;
     background-color: #486DF6;
-    padding: 5px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* max-width: 100px; */
+   display: inline-block;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 8px 13px 9px;
+    text-align: center;
+    vertical-align: middle;
+    height: 45px;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -352,11 +362,18 @@ svg:hover {
     border: 2px solid #2EAC6D;
 }
 
-.btn-nav:hover {
+.btn-nav:hover,
+.btn-nav:hover svg path {
     color: #000;
     background-color: #FCE637;
+    stroke: #000;
 }
-
+.btn-nav svg path {
+    stroke: yellow;
+}
+.btn-nav svg path:hover{
+    stroke: #000;
+}
 .navbar-toggler {
     padding-left: 0px !important;
 }
@@ -456,7 +473,7 @@ svg:hover {
 
 .app .text{
     position: relative;
-    top: 40%;
+    top: 35%;
 }
 .app .platform{
     position: absolute;
@@ -471,8 +488,16 @@ svg:hover {
     "IBM Plex Arabic Medium";
 }
 .app .text h2{
-    font-weight: bold;
-    font-size: 45px;
+    font-family:
+    "IBM Plex Arabic Bold 700";
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.app .text p{
+    font-family:
+    "IBM Plex Arabic Regular 400";
+    font-size: 1.3em;
+    margin-bottom: 20px;
 }
 .app .text .log-button{
     display: flex;
@@ -505,7 +530,7 @@ svg:hover {
              Welfare
 ==================================*/
 .welfare{
-    padding: 50px 0;
+    padding: 150px 0;
 }
 .welfare h2{
     color: #000000;
@@ -546,7 +571,7 @@ svg:hover {
              Quality
 ==================================*/
 .quality{
-   margin-top: 100px;
+   
 }
 .quality .text-q{
     gap: 5px;
@@ -650,12 +675,23 @@ svg:hover {
     position: absolute;
     top: 0;
     right: 0;
-    width: 65%;
+    width: 100%;
     height: 100%;
     z-index: 1;
     background:  linear-gradient(318deg, rgb(72, 110, 247) 11%, rgba(72, 110, 247, 0.02) 88%);
     /* background: linear-gradient(to left, rgba(46, 172, 109, 0.95) 65%, rgba(46, 172, 109, 0)); */
    
+}
+.card-when-subscribe::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(318deg, rgb(72, 110, 247) 11%, rgba(72, 110, 247, 0.02) 88%);
+    /* background: linear-gradient(to left, rgba(46, 172, 109, 0.95) 65%, rgba(46, 172, 109, 0)); */
 }
 
 .card-when-subscribethree::after {
@@ -891,10 +927,14 @@ svg:hover {
 
    }
    .competent .competent-box .box-text .image img{
-     width: 150px;
-     height: 150px;
+     width: 100px;
+     height: 100px;
      border-radius: 50%;
      margin-bottom: 10px;
+     transition: all 0.35s ease;
+   }
+   .competent .competent-box .box-text .image img:hover{
+    transform: scale(1.1);
    }
    .competent .competent-box .box-text h2 a{
     color: #000;
@@ -907,14 +947,15 @@ svg:hover {
    }.competent .competent-box .box-text span{
     border: 1px solid #486DF6;
     border-radius: 25px;
-    padding: 5px;
+    padding: 5px 10px;
    }
    .competent .competent-box .box-text span a{
         color: #000;
    }
    .competent .competent-box .box-text span a img{
-     width: 24px;
-     height: 24px;
+     width: 20px;
+     height: 20px;
+     vertical-align: text-bottom;
    }
    .competent button{
     color: #030303;
@@ -922,7 +963,11 @@ svg:hover {
     background-color: #ffffff;
     background-position: center center;
     background-size: cover;
-    font-weight: 400;
+    /* font-family:
+    "IBM Plex Arabic Light 300"; */
+
+    font-family:
+    "IBM Plex Arabic Thin 100";
     border-color: #e3f0fb;
     border-style: solid;
     border-top-width: 1px;
@@ -1055,13 +1100,15 @@ svg:hover {
     bottom: -70px;
 
 }
-#team .owl-dot.active {
-    background: #0463FA;
-    border-color: #0463FA;
+
+#team .owl-dot.active span {
+    border: 1px solid #486df6 !important;
+    background-color: #e6ebfc !important;
+    
 }
-.owl-theme .owl-nav [class*=owl-]:hover {
-   background: none !important;
-   color: #2b2828;
+ #team .owl-dot:hover span  {
+    border: 1px solid #486df6 !important;
+    background-color: #e6ebfc !important;
 }
 #team .owl-nav .owl-prev,
 #team .owl-nav .owl-next{
@@ -1095,9 +1142,10 @@ svg:hover {
 #team .owl-nav .owl-prev span,
 #team .owl-nav .owl-next span {
 position: absolute;
-    top: 44%;
+    top: 50%;
     transform: translateY(-50%);
     border: none;
+    font-size: 25px;
 }
    /* =============================
              end Competent
@@ -1296,21 +1344,35 @@ position: absolute;
     right: 25px;
     top: 10px;
     color: #0000;
-    background-color: #F09819;
-    padding: 5px 10px;
-    border-radius: 10px;
+    background-color: #F1DD3D;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 7px 12px;
+    border-radius: 100px;
+    box-shadow: none;
 }
 .img-aricle-card span a{
+    /* color: #000;
+    font-size: 14px; */
+
     color: #000;
+    font-size: .7em;
+    padding: 6px 7px 7px;
+    border-radius: 5px;
+    display: block;
+    line-height: 1;
+    font-weight: 500;
+    box-shadow: 0px 9px 25px rgb(217 221 255 / 40%);
 }
-.img-aricle-card span:hover {
+/* .img-aricle-card span:hover {
     transform: translateY(-5px);
     -webkit-transform: translateY(-5px);
     -moz-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
     cursor: pointer;
-}
+} */
 .card-articles:hover {
     transform: translateY(-5px);
     -webkit-transform: translateY(-5px);
@@ -1407,6 +1469,10 @@ position: absolute;
 }
 .newsay-header {
     margin-bottom: 10px;
+    font-family:
+    "IBM Plex Arabic SemiBold 600";
+    font-size: 1.8em;
+    line-height: 1.8em;
 }
 
 #newsay .log-button{
@@ -1420,6 +1486,9 @@ position: absolute;
 #newsay .log-button .logo-text p{
     color: #ffffff;
     font-size: 14px;
+    font-family: "IBM Plex Arabic Regular 400";
+    font-size: 1.3em;
+    margin-bottom: 20px;
 }
 #newsay .app-logo{
     display: flex;
@@ -1435,10 +1504,9 @@ position: absolute;
 }
 
 .p-newsay-header {
-    font-family: 'Somarmedium';
-    color: #000;
-    font-size: 25px;
-    margin-bottom: 20px;
+    line-height: 2em;
+    margin-bottom: 1.5em;
+    width: 66%;
 }
 
 .parent-say-customer {
@@ -1456,25 +1524,32 @@ position: absolute;
 }
 
 .name-customer {
-    font-family: 'Somar';
+    /* font-family: 'Somar';
     color: #000;
-    font-size: 20px;
+    font-size: 20px; */
+
+    color: #000000;
+    font-size: 1.2em;
+    font-family:
+    "IBM Plex Arabic Light 300";
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: block;
 }
 
 .rating-customer svg {
     color: gold;
     font-size: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .comment-customer p {
-    font-family: 'Somarmedium';
-    color: #000;
-    font-size: 18px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    color: #4C505D;
+    line-height: 1.8;
+    font-family:
+    "IBM Plex Arabic Medium 500";
 }
 
 #newsay-about .owl-nav {
@@ -1649,6 +1724,9 @@ position: absolute;
     border-radius: 11px;
     box-shadow: 0px 10px 50px rgb(239 246 252 / 60%);
 }
+.contact .pt-search-con input:focus{
+    outline: none;
+}
 .contact .pt-search-con button[type="submit"] {
     position: absolute;
     left: 0;
@@ -1784,6 +1862,9 @@ position: absolute;
     font-size: .9em;
     border-radius: 11px;
     box-shadow: 0px 10px 50px rgb(239 246 252 / 60%);
+}
+#footer .pt-search-con input:focus{
+    outline: none;
 }
 #footer .pt-search-con button[type="submit"] {
     position: absolute;
@@ -2071,7 +2152,7 @@ sans-serif;
               start standard
    ============================= */
    .standard{
-    margin: 100px 0px;
+    margin: 150px 0px;
     text-align: center;
     align-items: center;
    }
@@ -2081,12 +2162,10 @@ sans-serif;
    }
    .standard .standard-text h2{
     color: #000000;
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 2em;
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic Medium 500";
+    margin-bottom: 40px;
    }
    .standard .standard-head{
     margin-top: 20px;
@@ -2097,21 +2176,15 @@ sans-serif;
    }
    .standard .standard-head span{
     color: #000000    ;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 1.4em;
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic Medium 500";
    }
    .standard .standard-head p{
-    color: #7B8292;
-    font-size: 16px;
-    font-weight: 500;
+    color: #7b8292;
+    font-size: 1.1em;
     font-family:
-    "IBM Plex Arabic"
-    "Open Sans"
-    sans-serif;
+    "IBM Plex Arabic Medium 500";
    }
    .standard .standard-box{
     background-color: #6349FA;
@@ -2221,32 +2294,39 @@ sans-serif;
              Start Gate
    ============================= */
    .gate{
-    margin: 200px 0px 150px;
+    margin: 100px 0px 150px;
+    background-image: url(../img/rotation-hole4.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-top: 200px;
    }
    .gate .gate-text h2{
-    /* font-family:
-    "IBM Plex Arabic Regular 400"; */
+    font-family:
+    "IBM Plex Arabic Bold 700";
     font-size: 50px;
     color: #000000;
     line-height: 1.5;
     margin-bottom: 20px;
    }
    .gate .gate-text span{
-    font-weight: 400;
+    color: #000000;
+    font-size: 35px;
+    font-family:
+    "IBM Plex Arabic Regular 400";
    }
    .gate .gate-text p{
     color: #000000;
-    width: 97%;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    font-size: 20px;
+    font-size: 1.4em;
+    font-family:
+    "IBM Plex Arabic Regular 400";
    }
    .gate .gate-text .btn-gate{
-    padding: 15px 30px;
+    padding: 15px 20px;
     border-radius: 25px;
     border: none;
     background-color: #7784E8;
     transition: 1s;
+    font-size: 1.2em;;
    }
    .gate .gate-text .btn-gate:hover {
     transform: scale(105%);
@@ -2357,9 +2437,11 @@ sans-serif;
     margin: 100px 0;
    }
    .dollars h2{
-    font-size: 48px;
+    font-size: 40px;
     color: #3D3D3D;
     margin-bottom: 30px;
+    font-family:
+    "IBM Plex Arabic SemiBold 600";
    }
    .dollars span{
     font-size: 50px;
@@ -2367,9 +2449,11 @@ sans-serif;
    }
    .dollars p{
     color: #000000;
-    font-size: 18px;
-    font-weight: 600;
-    width: 92%;
+    font-size: 16px;
+    font-family:
+    "IBM Plex Arabic SemiBold 600";
+    width: 90%;
+    line-height: 2;
    
    }
    .dollars .dolar{
@@ -2422,7 +2506,7 @@ sans-serif;
 }
 .services .box p{
   width: 80%;
-  margin-left: auto;
+  margin: auto;
 }
 .services .btn-serv{
     padding: 15px 30px;
@@ -2782,8 +2866,12 @@ sans-serif;
 }
 .search .card img{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    transition: all 0.35s ease;
+}
+.search .card img:hover{
+    transform: scale(1.1);
 }
 .search .card-body{
     text-align: right;
@@ -2856,6 +2944,11 @@ sans-serif;
 .search nav .page-link:hover{
     transform: scale(105%);
 }
+.search .pagination .page-item a img{
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+}
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
@@ -2877,7 +2970,7 @@ sans-serif;
 }
 .special .image{
     position: relative;
-    bottom: -50px;
+    bottom: -77px;
 
 }
 .special .special-text{
@@ -3015,12 +3108,17 @@ sans-serif;
     border: 1px solid #486DF6;
     border-radius: 10px;
     margin-inline: 5px;
+    text-align: center;
    }
    .highlight .competent-box .box-text .image img{
-     width: 150px;
-     height: 150px;
+     width: 100px;
+     height: 100px;
      border-radius: 50%;
      margin-bottom: 10px;
+     transition: all 0.35s ease;
+   }
+   .highlight .competent-box .box-text .image img:hover{
+    transform: scale(1.1);
    }
    .highlight .competent-box .box-text .text{
     text-align: center;
@@ -3042,8 +3140,9 @@ sans-serif;
         color: #000;
    }
    .highlight .competent-box .box-text span a img{
-     width: 24px;
-     height: 24px;
+     width: 20px;
+     height: 20px;
+     vertical-align: sub;
    }
    .highlight button{
     color: #030303;
@@ -3161,6 +3260,9 @@ sans-serif;
     border-radius: 11px;
     box-shadow: 0px 10px 50px rgb(239 246 252 / 60%);
     margin-bottom: 10px;
+}
+.blog-laby .pt-search-con input:focus{
+    outline: none;
 }
 .blog-laby .pt-search-con input .placeholder{
     color: #7F82A6;
@@ -3475,6 +3577,9 @@ sans-serif;
         justify-content: center;
         flex-wrap: wrap;
     }
+    #newsay .log-button {
+        margin-bottom: 20px;
+    }
     .get-behicel{
         justify-content: center;
         flex-wrap: wrap;
@@ -3582,7 +3687,7 @@ sans-serif;
         display: none!important;
     }
     .gate{
-        margin: 70px 0px 50px;
+        margin: 0px 0px 50px;
        }
        .gate .gate-text h2{
        font-size: 30px;
